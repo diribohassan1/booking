@@ -38,7 +38,7 @@ class Page_inf(models.Model):
     twitter = models.CharField(blank=True,max_length=20)
     aboutus = RichTextUploadingField(blank=True)
     contact = RichTextUploadingField(blank=True)
-    aboutus = RichTextUploadingField(blank=True)
+    
 
     def __str__(self):
         return self.title
