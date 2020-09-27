@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Travello</title>
+<title>ZeyBee Bridals</title>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="description" content="Travello template project">
@@ -40,8 +40,9 @@
 							<div class="logo"><a href="index.html"><img class="logo" src="{% static  'images/logo.png' %}" alt=""></a></div>
 							<nav class="main_nav">
 								<ul class="d-flex flex-row align-items-start justify-content-start">
-									<li class="active"><a href="index.html" style="color: gold;">Home</a></li>
-									<li class="active"><a href="index.html" style="color: gold;">About Us</a></li>
+									<li class="active"><a href="" style="color: gold;">Home</a></li>
+									<li class=""><a href="/products" style="color: gold;">Products</a></li>
+									<li class=""><a href="/aboutus" style="color: gold;">About Us</a></li>
 									{% if user.is_authenticated %}
 									<li>Hello, {{user.first_name}}</li>
 									<li><a href="accounts/logout" style="color: gold;">Log Out</a></li>
@@ -51,7 +52,11 @@
 									{% endif %}
 								</ul>
 							</nav>
-							<div class="header_phone ml-auto" style="color: gold;">Call us: 00-254-718 989 576 | 00-254-716-616-164</div>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							<div>
+								<div class="header_phone ml-auto" style="color: gold;">Call us: 00-254-718 989 576 | 00-254-716-616-164</div>
+
+							</div>
 
 							<!-- Hamburger -->
 
@@ -84,20 +89,21 @@
 			<div class="menu_close_container ml-auto"><div class="menu_close"><div></div><div></div></div></div>
 		</div>
 		<div class="menu_content">
-			<ul class="d-flex flex-row align-items-start justify-content-start">
-				<li class="active"><a href="index.html" style="color: gold;">Home</a></li>
-				<li class="active"><a href="index.html" style="color: gold;">About Us</a></li>
-				{% if user.is_authenticated %}
-				<li>Hello, {{user.first_name}}</li>
-				<li><a href="accounts/logout" style="color: gold;">Log Out</a></li>
-				{% else %}
-				<li><a href="accounts/register" style="color: gold;">Register</a></li>
-				<li><a href="accounts/login" style="color: gold;">Log In</a></li>
-				{% endif %}
+			<ul>
+				<li class="active"><a href="" style="color: gold;">Home</a></li>
+									<li class=""><a href="/products" style="color: gold;">Products</a></li>
+									<li class=""><a href="/aboutus" style="color: gold;">About Us</a></li>
+									{% if user.is_authenticated %}
+									<li>Hello, {{user.first_name}}</li>
+									<li><a href="accounts/logout" style="color: gold;">Log Out</a></li>
+                                    {% else %}
+									<li><a href="accounts/register" style="color: gold;">Register</a></li>
+									<li><a href="accounts/login" style="color: gold;">Log In</a></li>
+									{% endif %}
 			</ul>
 		</div>
 		<div class="menu_social">
-			<div class="header_phone ml-auto" style="color: gold;">Call us: 00-254-718 989 576 | 00-254-716-616-164</div>
+			
 			<ul class="d-flex flex-row align-items-start justify-content-start">
 				<li><a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
 				<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
