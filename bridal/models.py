@@ -1,6 +1,6 @@
 from django.db import models
 from ckeditor_uploader.fields import RichTextUploadingField
-from django.utils.safestring import mark_safe
+
 
 
 # Create your models here.
@@ -10,7 +10,7 @@ class Gowns(models.Model):
         ('True', 'True' ),
         ('False', 'False'),
     )
-  
+
     name = models.CharField(max_length = 100)
     img = models.ImageField(upload_to = 'pics')
     price = models.IntegerField()
